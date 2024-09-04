@@ -6,57 +6,176 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Kung Fu Panda é um filme de animação que foi lançado em 2008 que conta a história de Po, um panda que trabalha na loja de macarrão de sua familia e sonha em transformar-se em um dragão guerreiro.",
+        enunciado: "Em qual Distrito Katniss vive antes de ser escolhida como tributo? ",
         alternativas: [
             {
-                texto: "Já asisti o filme e gostei da animação e desenvolvimento da história!",
-                afirmacao: "A pessoa gostou do filme"
+                texto: "Distrito 11",
+                afirmacao: [
+                    "Errado",
+                    ""
+                ],
+                proxima: 1,
             },
             {
-                texto: "Assisti o filme, mas não gostei de comoa história se desenvolvel",
-                afirmacao: "A pessoa não gostou do filme"
-            }
+                texto: "Distrito 12",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+                proxima: 2,
+            },
         ]
     },
     {
-        enunciado: "No primeiro filme, Po enfrenta Tai Lung, o que você achou desssa luta?",
+        enunciado: " Qual é o propósito dos Jogos Vorazes?",
         alternativas: [
             {
-                texto: "Achei muito boa a cena de luta, muito bem desenvolvida e engraçada!",
-                afirmacao: "A cena foi divertida"
+                texto: "Entreter o Capitol e manter a ordem através do medo",
+                afirmacao: [
+                    "Correto",
+                    "",
+                    ""
+                ],
+                proxima: 3,
             },
             {
-                texto: "Não gostei da cena de luta, poderia ter tido mais ação e emoção!",
-                afirmacao: "A cena não foi boa"
-            }
+                texto: " Reforçar a aliança entre os distritos",
+                afirmacao: [
+                    "Errado",
+                    "",
+                    ""
+                ],
+                proxima: 4,
+            },
         ]
     },
     {
-        enunciado: "Na saga, Po desenvolve uma grande amizade com os cinco furiosos",
+        enunciado: "Qual é o nome do símbolo que representa a resistência contra o Capitol?",
         alternativas: [
             {
-                texto: "Gosto de como a amizade deles foi desenvolvida no decorrer dos filmes",
-                afirmacao: "ela gostou do desenvolvimento dos personagens"
+                texto: "O Falcão",
+                afirmacao: [
+                    "Errado",
+                    "",
+                    ""
+                ],
+                proxima: 3,
             },
             {
-                texto: "Não gostei de como desenvolveram a amizade dos personagens",
-                afirmacao: "ela não gostou do desenvolvimento dos personagens"
-            }
+                texto: " O Tordo (Mockingjay)",
+                afirmacao: [
+                    "Correto",
+                    "",
+                    ""
+                ],
+                proxima: 4,
+            },
         ]
     },
     {
-        enunciado: "No último filme, os cinco furiosos não tiveram uma aparição",
+        enunciado: "Quem é o mentor de Katniss e Peeta durante os Jogos?",
         alternativas: [
             {
-                texto: "Infelizmente os cinco furiosos não apareceram,mas esse fato não teve importância para a história",
-                afirmacao: "não fez importância os cinco furiosos não aparecerem"
+                texto: " Haymitch Abernathy",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+                proxima: 5,
             },
             {
-                texto: "Infelizmente os cinco furiosos não apareceram, não teve impacto na hostória geral do filme, mas senti falta da aparição dos personagens!",
-                afirmacao: "fez importância os cinco furiosos não aparecerem"
-            }
+                texto: "Effie Trinket",
+                afirmacao: [
+                    "Errado",
+                    ""
+                ],
+                proxima: 6,
+            },
         ]
     },
+    {
+        enunciado: " Qual tributo do Distrito 11 ajuda Katniss durante os Jogos?",
+        alternativas: [
+            {
+                texto: " Clove",
+                afirmacao: [
+                    "Errado",
+                    ""
+                ],
+                proxima: 5,
+            },
+            {
+                texto: "Rue",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+                proxima: 6,
+            },
+        ]
+    },
+    { 
+        enunciado: " O que faz com que Katniss e Peeta se tornem um casal simbólico durante os Jogos?",
+        alternativas: [
+            {
+                texto: "A colaboração de Katniss e Peeta em uma aliança com outros tributos",
+                afirmacao: [
+                    "Errado",
+                    ""
+                ],
+                proxima: 7,
+            },
+            {
+                texto: " O ato de Peeta declarar seu amor por Katniss na televisão",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+                proxima: 7,
+            },
+        ]
+    },
+    {
+        enunciado: " Qual é o nome da protagonista de “Jogos Vorazes”?",
+        alternativas: [
+            {
+                texto: "Peeta Mellark",
+                afirmacao: [
+                    "Errado",
+                    ""
+                ],
+                proxima: 7,
+            },
+            {
+                texto: "Katniss Everdeen",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+                proxima: 7,
+            },
+        ]
+    },
+    {
+        enunciado: "Como os tributos são selecionados para participar dos Jogos Vorazes?",
+        alternativas: [
+            {
+                texto: "Através de um sorteio público",
+                afirmacao: [
+                    "Correto",
+                    ""
+                ],
+            },
+            {
+                texto: "Através de um teste de habilidades",
+                afirmacao: [
+                    "Errado",
+                    "",
+                    ""
+                ],
+            },
+        ]
+    }
 ];
 
 
